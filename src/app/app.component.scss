@@ -13,14 +13,14 @@ p {
 }
 
 .toolbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 100px;
   display: flex;
   align-items: center;
-  background-color: #1976d2;
+  background-color: #121212;
   color: white;
   font-weight: 600;
 }
@@ -46,11 +46,21 @@ p {
 
 .content {
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
   flex-direction: column;
   align-items: center;
+  background-color: #121212;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
 }
 
 .card svg.material-icons path {
@@ -61,12 +71,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 16px;
 }
 
-.card-container .card:not(:last-child) {
-  margin-right: 0;
-}
+
 
 .card-container .card:not(.highlight-card) {
   cursor: pointer;
@@ -89,7 +96,7 @@ p {
 a,
 a:visited,
 a:hover {
-  color: #1976d2;
+  color: #121212;
   text-decoration: none;
 }
 
@@ -116,6 +123,22 @@ a:hover {
 .circle-link:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -10px;
+
+  /* The styles below will be applied only when the screen width is between 600px and 800px */
+  @media (min-width: 600px) and (max-width: 800px) {
+    background-size: contain;
+  }
+
+  /* The styles below will be applied only when the screen width is less than 600px */
+  @media (max-width: 600px) {
+    background-size: auto;
+  }
 }
 
 
