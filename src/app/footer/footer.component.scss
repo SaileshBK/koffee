@@ -9,12 +9,11 @@
   margin-top: -10px;
   margin-left: -10px;
   margin-right: -10px;
-  height: 60px;
+  height: 72px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 
 a,
@@ -51,4 +50,24 @@ footer a {
 .circle-link:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-text-waivy {
+  color: #eeeeee;
+  font-size: 12px;
+  position: relative;
+}
+
+.footer-text-waivy span {
+  display: inline-block;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+
+@keyframes flip {
+
+  0%,
+  90% {
+    transform: rotateZ(360deg)
+  }
 }
