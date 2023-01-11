@@ -1,7 +1,7 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img width="150" alt="Website Logo" src="../assets/img/myCoffeeLogo_150x100.png" />
-  <span>My-Coffee</span>
+  <app-my-coffee></app-my-coffee>
   <div class="spacer"></div>
   <a aria-label="Angular on YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/" title="YouTube">
     <svg id="youtube-logo" height="44" width="44" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
@@ -16,16 +16,8 @@
   <img class="main-background" src="../assets/img/CreamCoffeePromoPoster.png">
 
 </div>
+
 <!-- Footer -->
-<footer class="content">
-  <!-- Links -->
-  <div class="card-container">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <a class="circle-link" title="Public APIs" href="https://github.com/SaileshBK/free-to-play" target="_blank"
-      rel="noopener">
-      <i class='bx bxl-github bx-tada bx-md'></i>
-    </a>
-  </div>
-</footer>
+<app-footer></app-footer>
 
 <router-outlet></router-outlet>
