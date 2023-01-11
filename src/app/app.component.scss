@@ -43,6 +43,7 @@ p {
   background-size: cover;
   margin-left: -10px;
 
+
   /* The styles below will be applied only when the screen width is between 600px and 800px */
   @media (min-width: 600px) and (max-width: 800px) {
     background-size: contain;
