@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MyCoffeeComponent } from './my-coffee/my-coffee.component';
+import { HotKoffeeComponent } from './hot-koffee/hot-koffee.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyCoffeeComponent,
+    HotKoffeeComponent,
     FooterComponent,
     MainContentComponent
   ],
