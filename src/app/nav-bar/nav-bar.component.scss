@@ -13,11 +13,17 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
   margin: 0;
   padding: 0;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 li a {
@@ -25,8 +31,22 @@ li a {
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  float: right;
 }
 
 li a:hover {
   background-color: #555;
+}
+
+i {
+  margin-right: 10px;
+  min-width: 20px;
+}
+
+li a .text {
+  margin-left: 15px;
+  font-family: "Comic Sans MS", sans-serif;
 }
