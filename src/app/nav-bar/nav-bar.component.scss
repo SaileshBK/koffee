@@ -1,5 +1,5 @@
 .sideNav {
-  width: 55px;
+  width: 60px;
   transition: all .5s ease;
   z-index: 1;
   /* or any other desired width */
@@ -43,7 +43,7 @@
 
 
       .sideNavBar-link-icon {
-        font-size: 22px;
+        font-size: 25px;
         width: 1.2rem;
         min-width: 1.5rem;
         margin: 1 0.5rem;
@@ -63,4 +63,8 @@
     }
   }
 
+}
+
+.sideNav:not(:hover) {
+  width: 60px;
 }

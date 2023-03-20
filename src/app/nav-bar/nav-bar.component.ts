@@ -13,24 +13,20 @@ interface SideNavBarSettings {
 })
 export class NavBarComponent {
 
-  @Output() onToggleSideNav : EventEmitter<SideNavBarSettings> = new EventEmitter();
+  @Output() onToggleSideNav: EventEmitter<SideNavBarSettings> = new EventEmitter();
   screenWidth = 0;
 
   isOpen = false;
   collapsed = true;
   navData = sideNavBarData;
+  isHovered: boolean = false;
 
 
   toggleCollapse(): void {
-    this.collapsed = !this.collapsed;
-    this.onToggleSideNav.emit({screenWidth: this.screenWidth, collapsed: this.collapsed});
+    if (this.isHovered) {
+      this.collapsed = !this.collapsed;
+      this.onToggleSideNav.emit({ screenWidth: this.screenWidth, collapsed: this.collapsed });
+    }
   }
-
-  closeSideNav(): void {
-    this.isOpen = false;
-    this.onToggleSideNav.emit({screenWidth: this.screenWidth, collapsed: this.collapsed});
-  }
-
-
 
 }

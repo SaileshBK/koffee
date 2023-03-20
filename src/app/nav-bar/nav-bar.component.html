@@ -1,11 +1,10 @@
-<div class="sideNav" [ngClass]="collapsed ? 'sideNav-collapsed': ''">
-  <button (click)="toggleCollapse()">Toggle</button>
-  <!-- <button class="btn-close" *ngIf="collapsed" (click)="closeSideNav()">Toggle</button> -->
+<div class="sideNav" [ngClass]="collapsed ? 'sideNav-collapsed': ''" (mouseenter)="isHovered=true"
+  (mouseleave)="isHovered=false">
   <ul class="sideNavBar-nav">
     <li class="sideNavBar-nav-item" *ngFor="let data of navData">
       <a class="sideNavBar-nav-link" [routerLink]="[data.routeLink]">
         <i class="sideNavBar-link-icon" [class]="data.icon"></i>
-        <span class="sideNavBar-link-text" *ngIf="collapsed">{{data.label}}</span>
+        <span class="sideNavBar-link-text" *ngIf="collapsed && isHovered">{{data.label}}</span>
       </a>
     </li>
   </ul>
