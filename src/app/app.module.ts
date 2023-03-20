@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,10 +16,11 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     FooterComponent,
     MainContentComponent,
     NavBarComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

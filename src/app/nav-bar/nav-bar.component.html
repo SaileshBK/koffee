@@ -1,24 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-link">
-        <a href="#">
-          <i class='bx bxs-home bx-flashing'></i>
-          <span class="text nav-text">Home</span>
-        </a>
-      </li>
-      <li class="nav-link">
-        <a href="#">
-          <i class='bx bxs-coffee-bean bx-flashing'></i>
-          <span class="text nav-text">About</span>
-        </a>
-      </li>
-      <li class="nav-link">
-        <a href="#">
-          <i class='bx bxs-contact bx-flashing'></i>
-          <span class="text nav-text">Contact</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div class="sideNav" [ngClass]="collapsed ? 'sideNav-collapsed': ''">
+  <button (click)="toggleCollapse()">Toggle</button>
+  <!-- <button class="btn-close" *ngIf="collapsed" (click)="closeSideNav()">Toggle</button> -->
+  <ul class="sideNavBar-nav">
+    <li class="sideNavBar-nav-item" *ngFor="let data of navData">
+      <a class="sideNavBar-nav-link" [routerLink]="[data.routeLink]">
+        <i class="sideNavBar-link-icon" [class]="data.icon"></i>
+        <span class="sideNavBar-link-text" *ngIf="collapsed">{{data.label}}</span>
+      </a>
+    </li>
+  </ul>
+</div>
