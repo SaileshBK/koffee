@@ -39,7 +39,7 @@
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: 500;
-      transition: all ease;
+      transition: all 0.3s ease;
 
 
       .sideNavBar-link-icon {
@@ -52,6 +52,7 @@
 
       .sideNavBar-link-text {
         margin-left: 0.5rem;
+        font-family: "Comic Sans MS", sans-serif;
       }
     }
   }
