@@ -43,6 +43,10 @@
   height: 36vmin;
   object-fit: cover;
   object-position: center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 #coffeeImages-track {
@@ -53,4 +57,9 @@
   left: 50%;
   top: 50%;
   transform: translate(-45%, -5%);
+}
+
+#coffeeImages-track>.coffeeImages:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
