@@ -22,6 +22,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     BrowserModule,
     AppRoutingModule,
   ],
+  exports: [HotKoffeeComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
