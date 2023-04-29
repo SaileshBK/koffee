@@ -1,7 +1,7 @@
 .container {
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   flex-direction: column;
   justify-content: center;
@@ -36,4 +36,21 @@
   height: 30px;
   width: 200px;
   font-size: 19px;
+}
+
+#coffeeImages-track>.coffeeImages {
+  width: 30vmin;
+  height: 36vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+#coffeeImages-track {
+  overflow: hidden;
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -5%);
 }
