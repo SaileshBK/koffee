@@ -1,6 +1,6 @@
 export const sideNavBarData = [
   {
-    routeLink: '/',
+    routeLink: '/nav-bar/home',
     icon: 'bx bxs-home bx-tada',
     label: 'Home'
   },

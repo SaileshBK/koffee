@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #121212;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 19px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.email-palceholder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin-left: -30px;
+}
+
+.email input {
+  background-color: transparent;
+  margin-left: 6px;
+  box-sizing: border-box;
+  color: #121212;
+  height: 30px;
+  width: 200px;
+  font-size: 19px;
+}
+
+#coffeeImages-track>.coffeeImages {
+  width: 30vmin;
+  height: 36vmin;
+  object-fit: cover;
+  object-position: center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#coffeeImages-track {
+  overflow: hidden;
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-45%, -5%);
+}
+
+#coffeeImages-track>.coffeeImages:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
