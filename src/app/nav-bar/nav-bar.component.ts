@@ -1,5 +1,6 @@
 import { Component, Output, EventEmitter, Renderer2 } from '@angular/core';
 import { sideNavBarData } from './nav-bar-data';
+import { Router, RouterLink } from '@angular/router';
 
 interface SideNavBarSettings {
   screenWidth: number;
@@ -20,6 +21,7 @@ export class NavBarComponent {
   collapsed = true;
   navData = sideNavBarData;
   isHovered: boolean = false;
+
 
 
   toggleCollapse(): void {

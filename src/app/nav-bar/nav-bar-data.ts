@@ -1,26 +1,26 @@
 export const sideNavBarData = [
   {
-    routeLink: 'home',
+    routeLink: '/',
     icon: 'bx bxs-home bx-tada',
     label: 'Home'
   },
   {
-    routeLink: 'About',
+    routeLink: '/nav-bar/about',
     icon: 'bx bxs-info-circle bx-tada',
     label: 'About'
   },
   {
-    routeLink: 'Products',
+    routeLink: '/nav-bar/products',
     icon: 'bx bxs-coffee-bean bx-tada',
     label: 'Products'
   },
   {
-    routeLink: 'gallery',
+    routeLink: '/nav-bar/gallery',
     icon: 'bx bxs-image bx-tada',
     label: 'Gallery'
   },
   {
-    routeLink: 'contact',
+    routeLink: '/nav-bar/contact',
     icon: 'bx bxs-contact bx-tada',
     label: 'Contact'
   }

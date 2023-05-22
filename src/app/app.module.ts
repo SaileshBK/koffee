@@ -7,6 +7,11 @@ import { HotKoffeeComponent } from './hot-koffee/hot-koffee.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { GalleryComponent } from './nav-bar/gallery/gallery.component';
+import { RouterModule } from '@angular/router';
+import { AboutComponent } from './nav-bar/about/about.component';
+import { ProductsComponent } from './nav-bar/products/products.component';
+import { ContactComponent } from './nav-bar/contact/contact.component';
 
 
 @NgModule({
@@ -15,12 +20,21 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     HotKoffeeComponent,
     FooterComponent,
     MainContentComponent,
-    NavBarComponent
+    NavBarComponent,
+    GalleryComponent,
+    AboutComponent,
+    ProductsComponent,
+    ContactComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: 'nav-bar/gallery', component: GalleryComponent },
+      { path: 'nav-bar/about', component: AboutComponent },
+      { path: 'nav-bar/products', component: ProductsComponent },
+      { path: 'nav-bar/contact', component: ContactComponent },
+    ])
   ],
   exports: [HotKoffeeComponent
   ],
