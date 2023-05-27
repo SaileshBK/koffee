@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin-top: 8vh;
+  max-width: 800px;
+  /* Adjust this value according to your desired width */
+  text-align: center;
+  margin-bottom: 7vh;
+}

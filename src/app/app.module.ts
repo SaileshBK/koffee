@@ -13,6 +13,7 @@ import { AboutComponent } from './nav-bar/about/about.component';
 import { ProductsComponent } from './nav-bar/products/products.component';
 import { ContactComponent } from './nav-bar/contact/contact.component';
 import { HomeComponent } from './nav-bar/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { HomeComponent } from './nav-bar/home/home.component';
       { path: 'nav-bar/about', component: AboutComponent },
       { path: 'nav-bar/products', component: ProductsComponent },
       { path: 'nav-bar/contact', component: ContactComponent },
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   exports: [HotKoffeeComponent
   ],
