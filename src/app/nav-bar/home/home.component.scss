@@ -1,14 +1,12 @@
 .container {
-  display: flex;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  flex-direction: column;
-  justify-content: center;
-  transform: translate(-50%, -50%);
   font-size: 25px;
   color: #121212;
   font-family: "Comic Sans MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .email {
