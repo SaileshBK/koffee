@@ -28,6 +28,7 @@ import { HomeComponent } from './nav-bar/home/home.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
+      { path: '', component: HomeComponent },
       { path: 'nav-bar/home', component: HomeComponent },
       { path: 'nav-bar/gallery', component: GalleryComponent },
       { path: 'nav-bar/about', component: AboutComponent },
