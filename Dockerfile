@@ -1,10 +1,14 @@
-FROM node:lts-slim
-
-WORKDIR /usr/src/app
-COPY . /usr/src/app
-
-RUN npm install -g @angular/cli
+# Stage 1: Build the Angular application
+FROM node:alpine AS build
+WORKDIR /app
+COPY package.json package-lock.json ./
 RUN npm install
-EXPOSE 4200
+COPY . .
+RUN npm run build
 
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+# Stage 2: Serve the application with Nginx
+FROM nginx:alpine
+COPY --from=build /app/dist/coffee /usr/share/nginx/html
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

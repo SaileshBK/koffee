@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Docker
+
+From the root of our project, we can build the docker image:
+
+`docker build -t koffee-nginx-app .`
+
+The -t flag tags our image with the name koffee-nginx-app and . tells Docker to use the Dockerfile in current directory.
+
+Now runnig the docker container:
+
+`docker run -d -p 8080:80 koffee-nginx-app`
+
+-d runs the container in detached mode (in the background).
+-p 8080:80 maps port 8080 on your local machine to port 80 inside the container
